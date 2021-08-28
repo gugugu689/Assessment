@@ -6,7 +6,8 @@
  逻辑业务：Logic  
  sql实现：Dao  
  日志配置：logger  
- 第三方库：pkg
+ 第三方库：pkg  
+ 日志记录：log
 ## 功能  
  1.日志  
  2.社区分类  
