@@ -1,0 +1,19 @@
+
+mode: "dev"
+port: 8080
+start_time: "2021-08-24"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "./log/logger.log"
+  max_size: 30
+  max_age: 60
+  max_backups: 1
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 123456
+  db: db1
