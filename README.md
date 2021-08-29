@@ -1,13 +1,4 @@
 # 考核
-## 说明  
- 配置文件：config（映射settings）   
- 路由文件：router   
- 控制：Controller  
- 逻辑业务：Logic  
- sql实现：Dao  
- 日志配置：logger  
- 第三方库：pkg  
- 日志记录：log
 ## 功能  
  1.日志  
  2.社区分类  
