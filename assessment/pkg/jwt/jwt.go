@@ -23,7 +23,7 @@ func keyFunc(_ *jwt.Token) (i interface{}, err error) {
 
 // GenToken 生成access token 和 refresh token
 func GenToken(userID int64) (aToken, rToken string, err error) {
-	// 创建一个我们自己的声明
+	// 创建一个声明
 	c := MyClaims{
 		userID, // 自定义字段
 		jwt.StandardClaims{
