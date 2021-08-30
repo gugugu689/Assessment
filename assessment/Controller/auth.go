@@ -14,7 +14,6 @@ const (
 // JWTAuthMiddleware 基于JWT的认证中间件
 func JWTAuthMiddleware() func(c *gin.Context) {
 	return func(c *gin.Context) {
-		// 客户端携带Token有三种方式 1.放在请求头 2.放在请求体 3.放在URI
 		// 假设Token放在Header的Authorization中，并使用Bearer开头
 		authHeader := c.Request.Header.Get("Authorization")
 		if authHeader == "" { //请求头缺少Auth Token
@@ -37,6 +36,6 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		}
 		// 将当前请求的username信息保存到请求的上下文c上
 		c.Set(ContextUserIDKey, mc.UserID)
-		c.Next() // 后续的处理函数可以用过c.Get("userID")来获取当前请求的用户信息
+		c.Next()
 	}
 }
