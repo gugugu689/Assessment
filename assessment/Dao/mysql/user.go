@@ -42,7 +42,7 @@ func SignUp(user *Models.User) (err error) {
 
 //Login 登陆
 func Login(user *Models.User) (err error) {
-	// 记录一下原始密码
+	// 记录原始密码
 	originPassword := user.Password
 	//定义接收查询结果的结构体变量
 	User := &Models.User{}
